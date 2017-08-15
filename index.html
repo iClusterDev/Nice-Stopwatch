@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+        <title>StopWatch</title>
+    </head>
+    <body>
+        
+        <header>
+            <div class="container">
+                <hr>
+                <div class="display">
+                    <div id="sDisplay"></div>            
+                </div>            
+                <hr>
+                <div class="timeRecordsContainer">
+                    <div class="row">
+                        <ul id="sTimeRecords"></ul>
+                    </div>            
+                </div>
+                <div class="watchCommands">
+                    <div id="start" class="row">
+                        <div id="sStartButton" class="button wide"><span>Start</span></div>
+                    </div>
+                    <div id="stop-lap" class="row hide">
+                        <div id="sStopButton" class="button"><span>Stop</span></div>
+                        <div id="sLapButton" class="button"><span>Lap</span></div>                
+                    </div>
+                    <div id="restart-reset" class="row hide">
+                        <div id="sRestartButton" class="button"><span>Restart</span></div>
+                        <div id="sResetButton" class="button"><span>Reset</span></div>                
+                    </div>            
+                </div>
+            </div>
+        </header>
+        
+        <script type="text/javascript" src="js/stopwatch.js"></script>
+        <script type="text/javascript" src="js/utilities.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        
+    </body>
+</html>

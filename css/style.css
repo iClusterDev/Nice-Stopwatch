@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 300;
+  margin: 16px 0;
+}
+
+hr {
+  border: none;
+  border-bottom: solid 1px #ccc;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.timeRecordsContainer {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin-bottom: 16px;
+  overflow: auto;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+/*-------------------------------------------------------------------------------
+    BUTTONS
+-------------------------------------------------------------------------------*/
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  border: solid 1px transparent;
+  color: #fff;
+  height: 60px;
+  margin: 0 0.25%;
+  transition: border 0.5s;
+  cursor: default;
+  width: 100%;
+  font-size: 18px;
+}
+
+.button:hover {
+  border: solid 1px #fff;
+}
+
+.button:first-child {
+  margin-left: 0;
+}
+
+.button:last-child {
+  margin-right: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.sCounter {
+  color: #00b0e5;
+  margin-right: 12px;
+  font-size: 14px;
+}
+
+.sElapsed {
+  font-size: 14px;
+  margin-right: 12px;
+  color: #fff;
+}
+
+.sLap {
+  font-weight: 100;
+  font-size: 24px;
+  color: #fff;
+}
+
+#sDisplay {
+  color: #fff;
+  text-align: center;
+  font-size: 56px;
+  font-weight: lighter;
+  padding: 18px 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('http://res.cloudinary.com/iclusterdev/image/upload/v1502819186/background_hhf6c0.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
